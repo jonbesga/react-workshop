@@ -1,0 +1,24 @@
+{
+  "name": "react-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "VITE_ENABLE_MOCK_API=1 pnpm --filter ./apps/microupx dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=20.0.0",
+    "pnpm": "^10.0.0"
+  },
+  "msw": {
+    "workerDirectory": [
+      "apps/microupx/public"
+    ]
+  }
+}
